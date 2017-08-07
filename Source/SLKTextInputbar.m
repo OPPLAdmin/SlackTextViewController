@@ -192,9 +192,9 @@ NSString * const SLKTextInputbarDidMoveNotification =   @"SLKTextInputbarDidMove
         _rightButton.titleLabel.font = [UIFont boldSystemFontOfSize:15.0];
         _rightButton.enabled = NO;
         
-        NSString *title = NSLocalizedString(@"Send", nil);
-        
-        [_rightButton setTitle:title forState:UIControlStateNormal];
+//        NSString *title = NSLocalizedString(@"Send", nil);
+//        
+//        [_rightButton setTitle:title forState:UIControlStateNormal];
     }
     return _rightButton;
 }
