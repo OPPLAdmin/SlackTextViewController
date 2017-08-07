@@ -44,6 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** The left action button action. */
 @property (nonatomic, strong) UIButton *leftButton;
+@property (strong, nonatomic) UIButton *leftButton2;
 
 /** The right action button action. */
 @property (nonatomic, strong) UIButton *rightButton;

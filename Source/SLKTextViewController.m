@@ -366,6 +366,11 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
     return _textInputbar.leftButton;
 }
 
+- (UIButton *) leftButton2
+{
+    return _textInputbar.leftButton2;
+}
+
 - (UIButton *)rightButton
 {
     return _textInputbar.rightButton;
@@ -1201,6 +1206,7 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
 
 - (void)slk_detectKeyboardStatesInNotification:(NSNotification *)notification
 {
+//    NSLog(@"detect keyboard states in not %@", notification);
     // Tear down
     _externalKeyboardDetected = NO;
     _keyboardUndocked = NO;

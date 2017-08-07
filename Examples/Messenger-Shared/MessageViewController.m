@@ -93,6 +93,9 @@
     
     [self.leftButton setImage:[UIImage imageNamed:@"icn_upload"] forState:UIControlStateNormal];
     [self.leftButton setTintColor:[UIColor grayColor]];
+    [self.leftButton2 setImage:[UIImage imageNamed:@"icn_upload"] forState:UIControlStateNormal];
+    [self.leftButton2 setTintColor:[UIColor grayColor]];
+    
     
     [self.rightButton setTitle:NSLocalizedString(@"Send", nil) forState:UIControlStateNormal];
     

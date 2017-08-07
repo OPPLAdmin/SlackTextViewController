@@ -120,6 +120,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface SLKTextViewController : UIViewController 
 /** Convenience accessors (accessed through the text input bar) */
 @property (nonatomic, readonly) SLKTextView *textView;
 @property (nonatomic, readonly) UIButton *leftButton;
+@property (nonatomic, readonly) UIButton *leftButton2;
 @property (nonatomic, readonly) UIButton *rightButton;
 
 
