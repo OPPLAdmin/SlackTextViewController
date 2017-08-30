@@ -746,8 +746,11 @@ NSString * const SLKTextInputbarDidMoveNotification =   @"SLKTextInputbarDidMove
     else {
         self.editorContentViewHC.constant = zero;
         
-        CGSize leftButtonSize = [self.leftButton imageForState:self.leftButton.state].size;
-        CGSize leftButton2Size = [self.leftButton2 imageForState:self.leftButton2.state].size;
+//        CGSize leftButtonSize = [self.leftButton imageForState:self.leftButton.state].size;
+//        CGSize leftButton2Size = [self.leftButton2 imageForState:self.leftButton2.state].size;
+        
+        CGSize leftButtonSize = CGSizeMake(30, 40);
+        CGSize leftButton2Size = leftButtonSize;
         
         if (leftButtonSize.width > 0) {
             self.leftButtonHC.constant = roundf(leftButtonSize.height);
