@@ -273,6 +273,9 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface SLKTextViewController : UIViewController 
  @param sender The object calling this method.
  */
 - (void)didPressLeftButton:(id _Nullable)sender;
+- (void) didPressLeftButton2: (id _Nullable) sender;
+- (void) didLongPressLeftButton: (UIGestureRecognizer *) sender;
+- (void) didLongPressLeftButton2: (UIGestureRecognizer *) sender;
 
 /**
  Notifies the view controller when the right button's action has been triggered, manually or by using the keyboard return key.

@@ -312,6 +312,12 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
         [_textInputbar.leftButton addTarget:self action:@selector(didPressLeftButton:) forControlEvents:UIControlEventTouchUpInside];
         [_textInputbar.leftButton2 addTarget:self action:@selector(didPressLeftButton2:) forControlEvents:UIControlEventTouchUpInside];
         
+        UILongPressGestureRecognizer *longPressGr1 = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(didLongPressLeftButton:)];
+        [_textInputbar.leftButton addGestureRecognizer:longPressGr1];
+        
+        UILongPressGestureRecognizer *longPressGr2 = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(didLongPressLeftButton2:)];
+        [_textInputbar.leftButton2 addGestureRecognizer:longPressGr2];
+        
         [_textInputbar.rightButton addTarget:self action:@selector(didPressRightButton:) forControlEvents:UIControlEventTouchUpInside];
         [_textInputbar.editorLeftButton addTarget:self action:@selector(didCancelTextEditing:) forControlEvents:UIControlEventTouchUpInside];
         [_textInputbar.editorRightButton addTarget:self action:@selector(didCommitTextEditing:) forControlEvents:UIControlEventTouchUpInside];
@@ -743,6 +749,14 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
 
 - (void) didPressLeftButton2: (id) sender
 {
+    
+}
+
+- (void) didLongPressLeftButton:(UIGestureRecognizer *)sender {
+    
+}
+
+- (void) didLongPressLeftButton2: (UIGestureRecognizer *) sender {
     
 }
 

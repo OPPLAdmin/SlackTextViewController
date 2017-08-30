@@ -431,6 +431,19 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (void) didLongPressLeftButton:(UIGestureRecognizer *)sender
+{
+    if (sender.state == UIGestureRecognizerStateBegan) {
+        NSLog(@"long press left button  begin");
+        return;
+    }
+    
+    if (sender.state == UIGestureRecognizerStateEnded) {
+        NSLog(@"long press left button  end");
+        return;
+    }
+}
+
 - (void)didPressRightButton:(id)sender
 {
     // Notifies the view controller when the right button's action has been triggered, manually or by using the keyboard return key.
