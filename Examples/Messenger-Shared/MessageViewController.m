@@ -753,6 +753,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"did select row at %li", indexPath.row);
     if ([tableView isEqual:self.autoCompletionView]) {
         
         NSMutableString *item = [self.searchResult[indexPath.row] mutableCopy];
