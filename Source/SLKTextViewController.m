@@ -672,7 +672,13 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
     
     CGFloat inputbarHeight = _textInputbar.appropriateHeight;
     
-    _textInputbar.rightButton.enabled = [self canPressRightButton];
+    
+    //don't disable the right button anymore, instead, fire empty action if we don't want it to react to user interactions. Impmenented due to business requirements
+    
+//    _textInputbar.rightButton.enabled = [self canPressRightButton];
+    
+    
+    
     _textInputbar.editorRightButton.enabled = [self canPressRightButton];
     
     if (inputbarHeight != self.textInputbarHC.constant)
@@ -762,6 +768,16 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
 
 - (void)didPressRightButton:(id)sender
 {
+    //don't make this func overridable, instead, make the fire action overridable
+    // right button fire action
+    if ([self canPressRightButton]) {
+        [self rightButtonFireAction];
+    }
+}
+
+
+- (void) rightButtonFireAction {
+    
     if (self.shouldClearTextAtRightButtonPress) {
         // Clears the text and the undo manager
         [self.textView slk_clearText:YES];

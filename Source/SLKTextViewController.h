@@ -277,14 +277,16 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface SLKTextViewController : UIViewController 
 - (void) didLongPressLeftButton: (UIGestureRecognizer *) sender;
 - (void) didLongPressLeftButton2: (UIGestureRecognizer *) sender;
 
-/**
- Notifies the view controller when the right button's action has been triggered, manually or by using the keyboard return key.
- You can override this method to perform additional tasks associated with the right button.
- You MUST call super at some point in your implementation.
- 
- @param sender The object calling this method.
- */
-- (void)didPressRightButton:(id _Nullable)sender NS_REQUIRES_SUPER;
+///**
+// Notifies the view controller when the right button's action has been triggered, manually or by using the keyboard return key.
+// You can override this method to perform additional tasks associated with the right button.
+// You MUST call super at some point in your implementation.
+// 
+// @param sender The object calling this method.
+// */
+//- (void)didPressRightButton:(id _Nullable)sender NS_REQUIRES_SUPER;
+
+- (void) rightButtonFireAction NS_REQUIRES_SUPER;
 
 /**
  Verifies if the right button can be pressed. If NO, the button is disabled.
