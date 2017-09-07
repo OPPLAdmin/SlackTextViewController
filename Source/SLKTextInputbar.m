@@ -215,7 +215,9 @@ NSString * const SLKTextInputbarDidMoveNotification =   @"SLKTextInputbarDidMove
         _rightButton = [UIButton buttonWithType:UIButtonTypeSystem];
         _rightButton.translatesAutoresizingMaskIntoConstraints = NO;
         _rightButton.titleLabel.font = [UIFont boldSystemFontOfSize:15.0];
-        _rightButton.enabled = NO;
+        
+        //no enable anymore, handled in another way due to business requirements
+//        _rightButton.enabled = NO;
         
 //        NSString *title = NSLocalizedString(@"Send", nil);
 //        
