@@ -2280,7 +2280,7 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
     NSDictionary *views = @{@"scrollView": self.scrollViewProxy,
                             @"autoCompletionView": self.autoCompletionView,
                             @"typingIndicatorView": self.typingIndicatorProxyView,
-                            @"textInputbar": self.textInputbar
+                            @"textInputbar": self.textInputbar,
                             };
     
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[scrollView(0@750)][typingIndicatorView(0)]-0@999-[textInputbar(0)]|" options:0 metrics:nil views:views]];
