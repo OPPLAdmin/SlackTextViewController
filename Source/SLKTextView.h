@@ -146,6 +146,9 @@ UIKIT_EXTERN NSString * const SLKTextViewPastedItemData;
 @protocol SLKTextViewDelegate <UITextViewDelegate>
 @optional
 
+//added 20Nov17 since the dault slack didn't handle the paste image well(handled but somehow not able to trigger)
+- (void) textView: (SLKTextView *) textView didPasteImage: (UIImage *) image;
+
 /**
  Asks the delegate whether the specified formatting symbol should be displayed in the tooltip.
  This is useful to remove some tooltip options when they no longer apply in some context.
