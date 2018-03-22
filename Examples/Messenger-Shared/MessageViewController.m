@@ -540,9 +540,9 @@
 #endif
 }
 
-- (BOOL)shouldProcessTextForAutoCompletion:(NSString *)text
+- (BOOL)shouldProcessTextForAutoCompletion
 {
-    return [super shouldProcessTextForAutoCompletion:text];
+    return [super shouldProcessTextForAutoCompletion];
 }
 
 - (BOOL)shouldDisableTypingSuggestionForAutoCompletion
